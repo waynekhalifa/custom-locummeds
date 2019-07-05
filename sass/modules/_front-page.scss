@@ -1,0 +1,16 @@
+.about {
+    @extend .section;
+    p {
+        margin-bottom: $s-size;
+    }
+    
+    @include breakpoint($bp-desktop) {
+        background: url('./img/about-bg.png') no-repeat center 100%;
+        padding: $l-size 0;
+
+        p {
+            max-width: 800px;
+            margin-bottom: $m-size;
+        }
+    }
+}

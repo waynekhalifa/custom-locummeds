@@ -1,0 +1,26 @@
+.entry-header {
+    @extend .section;
+    border-bottom: 2px solid $light-gray;
+}
+
+.entry-title {
+    position: relative;
+
+    &::after {
+        content: '';
+        background: $main-color;
+        height: .2rem;
+        width: 10rem;
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+    }
+}
+
+.entry-content {
+    @extend .section;
+
+    p {
+        margin-bottom: $s-size;
+    }
+}

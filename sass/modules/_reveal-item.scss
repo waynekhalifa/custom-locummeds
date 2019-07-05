@@ -1,0 +1,17 @@
+.reveal-item {
+    opacity: 0;
+    @include transition-time(1.3s, ease-out);
+
+    &--left {
+        transform: translateX(-100%);
+    }
+
+    &--right {
+        transform: translateX(100%);
+    }
+
+    &--is-visible {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

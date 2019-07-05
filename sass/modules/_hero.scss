@@ -1,0 +1,88 @@
+.hero {
+    @extend .section;
+    background-image: url('./img/hero-bg.jpg');
+    background-position: center center; 
+    background-size: cover;
+
+    &--stuck {
+        padding-top: 68px;
+    }
+}
+
+.hero__title {
+    color: white;
+    text-align: center;
+    // max-width: 600px;
+    padding: $xl-size 0;
+    // position: relative;
+    // left: 50%;
+    // transform: translateX(-50%);
+    line-height: 1;
+    @include breakpoint($bp-desktop) {
+        @include container(600px);
+        padding: $xxl-size 0;
+    }
+}
+
+.job__search {
+    background: rgba(black, .4);
+    border-radius: 4px;
+    // margin-top: $xxl-size;
+    margin-bottom: $m-size;
+    padding: $m-size;
+    @include breakpoint($bp-desktop) {
+        margin-top: $xxl-size;
+    }
+}
+
+.job__search__input {
+    margin-bottom: $m-size;
+}
+
+.job__search__button {
+    background: $main-color;
+    color: white;
+}
+
+.hero__actions {
+    display: inline-block;
+    margin-bottom: $l-size;
+    text-align: center;
+    background: rgba(white, .5);
+    border-radius: 4px;
+    padding: $s-size;
+    width: fit-content !important;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    @include breakpoint($bp-desktop) {
+        margin-bottom: $xxl-size;
+    }
+}
+
+.hero__actions a {
+    // display: block;
+    display: inline-block;
+    background: $main-color;
+    border-radius: 2px;
+    color: white;
+    margin: .4rem;
+    padding: $s-size $l-size;
+    text-align: center;
+
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+}
+
+.hero__roles {
+    @extend .section;
+    text-align: center;
+}
+
+.hero__roles img {
+    height: 200px;
+    width: auto;
+    margin-right: auto;
+    margin-left: auto;
+}

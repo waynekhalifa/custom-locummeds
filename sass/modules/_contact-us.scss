@@ -1,0 +1,26 @@
+.location {
+    @extend .section;
+}
+
+.contact-us {
+    .entry-content {
+        li {
+            color: $gray;
+        }
+
+        a {
+            @include link-style($main-color, $main-color);
+        }
+
+        @include breakpoint($bp-desktop) {
+            p,
+            ul {
+                margin-bottom: $m-size;
+            }
+
+            li {
+                margin-bottom: $s-size;
+            }
+        }
+    }
+}
