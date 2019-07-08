@@ -680,11 +680,16 @@ select {
   background: #3fa7da;
   border-radius: 2px;
   color: white;
-  margin: .4rem;
+  margin: 0 0 0.8rem 0;
   padding: 0.8rem 2.4rem;
-  text-align: center; }
+  text-align: center;
+  width: 100%; }
   .hero__actions a:last-of-type {
     margin-bottom: 0; }
+  @media (min-width: 768px) {
+    .hero__actions a {
+      margin: .4rem;
+      width: auto; } }
 
 .hero__roles {
   text-align: center; }

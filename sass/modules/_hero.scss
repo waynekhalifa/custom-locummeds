@@ -61,17 +61,22 @@
 }
 
 .hero__actions a {
-    // display: block;
     display: inline-block;
     background: $main-color;
     border-radius: 2px;
     color: white;
-    margin: .4rem;
+    margin: 0 0 $s-size 0;
     padding: $s-size $l-size;
     text-align: center;
+    width: 100%;
 
     &:last-of-type {
         margin-bottom: 0;
+    }
+
+    @include breakpoint($bp-tablet) {
+        margin: .4rem;
+        width: auto;
     }
 }
 
