@@ -10,12 +10,10 @@ $(document).ready(function(){
     new OwlSliders();
     new StickyHeader();
     new RevealOnScroll( $('.about'), '85%', 'left' );
+    new RevealOnScroll( $('.about-us .entry-content'), '50%', 'left' );
     new RevealOnScroll( $('.testimonials'), '85%', 'right' );
-    new RevealOnScroll( $('.company-contact'), '85%', 'left' );
+    new RevealOnScroll( $('.company-contact'), '65%', 'zoom-out' );
     new Modal( $('.request-modal'), $('.request-callback'), $('.backdrop') );
     new Modal( $('.refer-modal'), $('.refer-friend'), $('.backdrop') );
     new Modal( $('.send-cv-modal'), $('.send-cv'), $('.backdrop') );
 });
-
-// Google Map
-// const map = new GoogleMap( document.getElementById('map-canvas'));

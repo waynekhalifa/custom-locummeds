@@ -1,17 +1,17 @@
 import waypoints from '../../node_modules/waypoints/lib/noframework.waypoints';
 
 class RevealOnScroll {
-    constructor(items, offset, dir) {
+    constructor(items, offset, effect) {
         this.itemsToReveal = items;
         this.offsetPercentage = offset;
-        this.direction = dir;
+        this.effect = effect;
         this.hideInitially();
         this.createWaypoints();
     }
 
     hideInitially() {
         this.itemsToReveal.addClass('reveal-item');
-        this.itemsToReveal.addClass('reveal-item--' + this.direction);
+        this.itemsToReveal.addClass('reveal-item--' + this.effect);
     }
 
     createWaypoints() {

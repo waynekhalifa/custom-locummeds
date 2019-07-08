@@ -891,8 +891,11 @@ select {
     transform: translateX(-100%); }
   .reveal-item--right {
     transform: translateX(100%); }
+  .reveal-item--zoom-out {
+    transform: scale(1.2); }
   .reveal-item--is-visible {
     opacity: 1;
+    transform: scale(1);
     transform: translateX(0); }
 
 .service {
