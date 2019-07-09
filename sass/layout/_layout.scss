@@ -251,3 +251,29 @@ $no-gatters: (
 		}
 	}
 }
+
+/*============ Clients Page Layout ==============*/
+.offers {
+	@include span(12 of 12);
+
+	.offer {
+		@include breakpoint($bp-tablet) {
+			@include span(6 of 12);
+
+			&:nth-child(2n) {
+				@include span(6 of 12 last);
+			}
+		}
+		@include breakpoint($bp-desktop) {
+			@include span(4 of 12);
+
+			&:nth-child(2n) {
+				@include span(4 of 12);
+			}
+
+			&:nth-child(3n) {
+				@include span(4 of 12 last);
+			}
+		}
+	}
+}
