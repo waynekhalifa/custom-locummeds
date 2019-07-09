@@ -32,6 +32,23 @@ function custom_post_types() {
 			'all_items' => 'All Testimonials',
 			'singular_name' => 'Testimonial'
 		),
-    ));
+	));
+	
+	// Service
+	register_post_type( 'service', array(
+		'supports' => array('title', 'editor', 'thumbnail'),
+		'show_in_rest' => true,
+        'has_archive' => true,
+        'rewrite' => array('slug' => 'services'),
+        'public' => true,
+        'menu_icon' => 'dashicons-buddicons-community',
+		'labels' => array(
+			'name' => 'Services',
+			'add_new_item' => 'New Service',
+			'edit_item' => 'Edit Service',
+			'all_items' => 'All Services',
+			'singular_name' => 'Service'
+		),
+	));
 }
 add_action( 'init', 'custom_post_types', 0 );

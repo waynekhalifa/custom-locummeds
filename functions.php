@@ -123,6 +123,11 @@ add_action( 'wp_enqueue_scripts', 'custom_locummeds_scripts' );
 require get_template_directory() . '/inc/modal.php';
 
 /**
+ * Changes Job Manager default Company Logo.
+ */
+require get_template_directory() . '/inc/company-logo.php';
+
+/**
  * Register Custom Fields.
  */
 require get_template_directory() . '/inc/acf-fields.php';
