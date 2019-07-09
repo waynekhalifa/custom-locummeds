@@ -277,3 +277,28 @@ $no-gatters: (
 		}
 	}
 }
+
+/*=========== Candidate Page Layout =============*/
+.counter-widgets {
+	@include span(12 of 12);
+
+	@include breakpoint($bp-tablet) {
+		.counter-widget {
+			@include span(6 of 12);
+
+			&:nth-child(2n) {
+				@include span(6 of 12 last);
+			}
+		}
+	}
+
+	@include breakpoint($bp-desktop) {
+		.counter-widget {
+			@include span(4 of 12);
+
+			&:nth-child(2n) {
+				@include span(4 of 12 last);
+			}
+		}
+	}
+}

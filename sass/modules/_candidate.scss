@@ -1,0 +1,44 @@
+.counter-widgets {
+    // @extend .section;
+    background: url('./img/bg_quote.jpg') no-repeat;
+    background-size: 100%; 
+    color: white;
+    padding: $l-size 0;
+}
+
+.counter-widget {
+    text-align: center;
+
+    .counter {
+        font-size: 6.4rem;
+
+        &::before {
+            font-family: FontAwesome;
+            content: "\f219";
+            color: white;
+            display: block;
+            padding: $m-size;
+            font-size: $xxl-size;
+        }
+
+        @include breakpoint($bp-desktop) {
+            font-size: 7.2rem;
+        }
+    }
+
+    &:last-child {
+
+        .counter {
+    
+            &::before {
+                content: "\f017";
+            }
+        }
+    }
+}
+
+.counter-widget__title {
+    display: block;
+    font-size: $xl-size;
+    margin-bottom: $l-size;
+}
