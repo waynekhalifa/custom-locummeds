@@ -41,8 +41,8 @@ get_header();
                 </div>
             </div>
         </div>
-        <ul class="services">
-            <div class="content-wrap">
+        <div class="content-wrap">
+            <ul class="services">
                 <li class="service">
                     <div class="service__content">
                         <h2 class="service__title">Jobs</h2>
@@ -73,8 +73,8 @@ get_header();
                         <a href="#"><?php _e('Apply Here', 'custom-locumeds'); ?></a>
                     </div>
                 </li>
-            </div>
-        </ul>
+            </ul>
+        </div>
         <div class="about">
             <div class="content-wrap">
                 <h2 class="section__title">Welcome to Locum Meds</h2>
