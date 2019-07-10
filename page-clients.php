@@ -33,18 +33,14 @@ get_header();
                         'posts_per_page'    => -1
                     );
                     $query = new WP_Query( $args );
+                    if ($query->have_posts()) :
+                        echo '<ul class="offers">';
+                        while($query->have_posts()) : $query->the_post();
+                            get_template_part( 'template-parts/offer' );
+                        endwhile;
+                        echo '</ul>';
+                    endif; 
                 ?>
-                <?php if ($query->have_posts()) : ?>
-                    <ul class="offers">
-                        <?php while($query->have_posts()) : $query->the_post(); ?>
-                            <li class="offer">
-                                <div class="offer__thumb"><?php the_post_thumbnail(); ?></div>
-                                <h3 class="offer__title"><?php the_title(); ?></h3>
-                                <?php the_content(); ?>
-                            </li>
-                        <?php endwhile; ?>
-                    </ul>
-                <?php endif; ?>
 
 				<?php // If comments are open or we have at least one comment, load up the comment template.
 				if ( comments_open() || get_comments_number() ) :

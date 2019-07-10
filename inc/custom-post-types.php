@@ -50,5 +50,22 @@ function custom_post_types() {
 			'singular_name' => 'Service'
 		),
 	));
+
+	// Candidate
+	register_post_type( 'candidate', array(
+		'supports' => array('title', 'editor', 'thumbnail'),
+		'show_in_rest' => true,
+        'has_archive' => true,
+        'rewrite' => array('slug' => 'candidates'),
+        'public' => true,
+        'menu_icon' => 'dashicons-buddicons-groups',
+		'labels' => array(
+			'name' => 'Candidates',
+			'add_new_item' => 'New Candidate',
+			'edit_item' => 'Edit Candidate',
+			'all_items' => 'All Candidates',
+			'singular_name' => 'Candidate'
+		),
+	));
 }
 add_action( 'init', 'custom_post_types', 0 );

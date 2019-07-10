@@ -43,7 +43,20 @@ get_header();
             </ul>
 
             <div class="content-wrap">
-                <ul class="offers">this offers placeholder</ul>
+                <?php
+                    $args = array(
+                        'post_type'         => 'candidate',
+                        'posts_per_page'    => -1
+                    );
+                    $query = new WP_Query( $args );
+                    if ($query->have_posts()) :
+                        echo '<ul class="offers">';
+                        while($query->have_posts()) : $query->the_post();
+                            get_template_part( 'template-parts/offer' );
+                        endwhile;
+                        echo '</ul>';
+                    endif; 
+                ?>
             </div>
 
             <?php // If comments are open or we have at least one comment, load up the comment template.
