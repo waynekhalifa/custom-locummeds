@@ -59,7 +59,7 @@
 	get_template_part( 'template-parts/backdrop' ); ?>
 	<div class="request-modal contact-form"><?php modal( do_shortcode('[contact-form-7 id="100" title="Contact form"]') ); ?></div>
 	<div class="refer-modal contact-form"><?php modal( do_shortcode('[contact-form-7 id="12768" title="Refer a Friend"]') ); ?></div>
-	<div class="send-cv-modal"><?php modal( do_shortcode('[contact-form-7 id="113" title="Send CV Contact Form"]') ); ?></div>
+	<div class="send-cv-modal contact-form"><?php modal( do_shortcode('[contact-form-7 id="113" title="Send CV Contact Form"]') ); ?></div>
 
 </div><!-- #page -->
 

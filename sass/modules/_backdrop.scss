@@ -4,6 +4,8 @@
     background: rgba(black, .6);
     display: none;
     position: fixed;
+    left: 0;
+    top: 0;
     z-index: 11;
 
     &--is-visible {
