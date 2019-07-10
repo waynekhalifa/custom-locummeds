@@ -10,10 +10,8 @@ function custom_locummeds_widgets_init() {
 		'name'          => esc_html__( 'Hotline', 'custom-locummeds' ),
 		'id'            => 'hotline',
 		'description'   => esc_html__( 'Add widgets here.', 'custom-locummeds' ),
-		'before_widget' => '<section id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</section>',
-		'before_title'  => '<h2 class="widget-title">',
-		'after_title'   => '</h2>',
+		'before_widget' => '<div class="widget %2$s">',
+		'after_widget'  => '</div>'
 	) );
 
 	// Mail widget
@@ -21,10 +19,8 @@ function custom_locummeds_widgets_init() {
 		'name'          => esc_html__( 'Mail', 'custom-locummeds' ),
 		'id'            => 'mail',
 		'description'   => esc_html__( 'Add widgets here.', 'custom-locummeds' ),
-		'before_widget' => '<section id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</section>',
-		'before_title'  => '<h2 class="widget-title">',
-		'after_title'   => '</h2>',
+		'before_widget' => '<div class="widget %2$s">',
+		'after_widget'  => '</div>'
 	) );
 
 	// About widget
@@ -32,10 +28,8 @@ function custom_locummeds_widgets_init() {
 		'name'          => esc_html__( 'About', 'custom-locummeds' ),
 		'id'            => 'about',
 		'description'   => esc_html__( 'Add widgets here.', 'custom-locummeds' ),
-		'before_widget' => '<section id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</section>',
-		'before_title'  => '<h2 class="widget-title">',
-		'after_title'   => '</h2>',
+		'before_widget' => '<div class="widget %2$s">',
+		'after_widget'  => '</div>'
 	) );
 
 	// Contact widget
@@ -43,10 +37,8 @@ function custom_locummeds_widgets_init() {
 		'name'          => esc_html__( 'Contact', 'custom-locummeds' ),
 		'id'            => 'contact',
 		'description'   => esc_html__( 'Add widgets here.', 'custom-locummeds' ),
-		'before_widget' => '<section id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</section>',
-		'before_title'  => '<h2 class="widget-title">',
-		'after_title'   => '</h2>',
+		'before_widget' => '<div class="widget %2$s">',
+		'after_widget'  => '</div>'
 	) );
 
 	// Social widget
@@ -54,10 +46,8 @@ function custom_locummeds_widgets_init() {
 		'name'          => esc_html__( 'Social', 'custom-locummeds' ),
 		'id'            => 'social',
 		'description'   => esc_html__( 'Add widgets here.', 'custom-locummeds' ),
-		'before_widget' => '<section id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</section>',
-		'before_title'  => '<h2 class="widget-title">',
-		'after_title'   => '</h2>',
+		'before_widget' => '<div class="widget %2$s">',
+		'after_widget'  => '</div>'
 	) );
 }
 add_action( 'widgets_init', 'custom_locummeds_widgets_init' );
