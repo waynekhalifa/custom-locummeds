@@ -29,18 +29,18 @@ get_header();
                 </div><!-- .entry-content -->
             </div>
     
-            <ul class="counter-widgets">
+            <div class="counter-widgets">
                 <div class="content-wrap">
-                    <li class="counter-widget">
+                    <div class="counter-widget">
                         <span class="counter"><?php the_field('weekly_hours_worked'); ?></span>
                         <strong class="counter-widget__title"><?php _e('Weekly Hours Worked', 'custom-locummeds'); ?></strong>
-                    </li>
-                    <li class="counter-widget">
+                    </div>
+                    <div class="counter-widget">
                         <span class="counter"><?php the_field('clients_served'); ?></span>
                         <strong class="counter-widget__title"><?php _e('Clients Served', 'custom-locummeds'); ?></strong>
-                    </li>
+                    </div>
                 </div>
-            </ul>
+            </div>
 
             <div class="content-wrap">
                 <?php
