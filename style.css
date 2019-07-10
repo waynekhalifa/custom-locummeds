@@ -545,6 +545,20 @@ select {
   .backdrop--is-visible {
     display: block; }
 
+.candidate .entry-content {
+  text-align: right; }
+  .candidate .entry-content a {
+    display: inline-block;
+    background: #3fa7da;
+    color: white;
+    border-radius: .4rem;
+    padding: 0.8rem 1.6rem; }
+    .candidate .entry-content a::after {
+      content: "\f019";
+      font-family: FontAwesome;
+      margin-left: 1.6rem;
+      color: white; }
+
 .counter-widgets {
   background: url("./img/bg_quote.jpg") no-repeat;
   background-size: cover;
