@@ -17,6 +17,12 @@
             }
         }
     }
+
+    .offer {
+        @include breakpoint($bp-tablet) {
+            min-height: 40rem;
+        }
+    }
 }
 
 .counter-widgets {
