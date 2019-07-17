@@ -170,15 +170,28 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 }
 
 /**
+ * WP Job Manager Customization.
+ */
+require get_template_directory() . '/inc/job-manager.php';
+
+/**
+ * WP Job Manager Structured Data Customization.
+ */
+require get_template_directory() . '/inc/structured-data.php';
+
+/**
+ * Rewrite pages priority higher than custom post types and taxonomies.
+ */
+require get_template_directory() . '/inc/verbose-rules.php';
+
+/**
  * Remove the api discovery from the site
  */
 
 // Disable REST API link tag
 remove_action('wp_head', 'rest_output_link_wp_head', 10);
-
 // Disable oEmbed Discovery Links
 remove_action('wp_head', 'wp_oembed_add_discovery_links', 10);
-
 // Disable REST API link in HTTP headers
 remove_action('template_redirect', 'rest_output_link_header', 11, 0);
 

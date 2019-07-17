@@ -302,3 +302,16 @@ $no-gatters: (
 		}
 	}
 }
+
+/*============= Job Filters Layout =============*/
+.job_filters{
+	@include breakpoint($bp-desktop) {
+		.job__search__input {
+			@include span(6 of 12);
+
+			&:last-of-type {
+				@include span(6 of 12 last);
+			}
+		}
+	}
+}

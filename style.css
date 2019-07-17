@@ -325,6 +325,17 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
         float: right;
         margin-right: 0; } }
 
+/*============= Job Filters Layout =============*/
+@media (min-width: 1260px) {
+  .job_filters .job__search__input {
+    width: 48.5714285714%;
+    float: left;
+    margin-right: 2.8571428571%; }
+    .job_filters .job__search__input:last-of-type {
+      width: 48.5714285714%;
+      float: right;
+      margin-right: 0; } }
+
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -860,6 +871,17 @@ select {
   .refer-modal.expanded,
   .send-cv-modal.expanded {
     display: block; }
+
+.job_filters {
+  padding: 1.6rem;
+  margin-bottom: 1.6rem; }
+  @media (min-width: 1260px) {
+    .job_filters {
+      margin-bottom: 2.4rem; } }
+
+.job_types,
+.showing_jobs {
+  margin-top: 1.6rem !important; }
 
 .site-footer {
   background: #526371; }

@@ -15,11 +15,10 @@ get_header();
         <div class="hero">
             <div class="content-wrap">
                 <h1 class="hero__title">Find Your Perfect Primary Care Role Now</h1>
-                <form class="job__search" method="GET" action="<?php echo site_url('/') . '/medical-healthcare-recruitment-agency-jobs-online'; ?>">
-
+                <form class="job__search" method="GET" action="<?php echo site_url('/') . '/jobs'; ?>">
                     <input type="text" id="search_location" class="job__search__input" name="search_location" placeholder="e.g. London, West London"/>
                     <select id="search_category" class="job__search__input" name="search_category">
-                        <option value="">Jobs</option>
+                        <option value=""><?php _e('Jobs', 'custom-locummeds'); ?></option>
                         <?php foreach ( get_job_listing_categories() as $cat ) : ?>
                             <option value="<?php echo esc_attr( $cat->term_id ); ?>"><?php echo esc_html( $cat->name ); ?></option>
                         <?php endforeach; ?>

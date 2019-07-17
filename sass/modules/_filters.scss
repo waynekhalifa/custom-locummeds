@@ -1,0 +1,13 @@
+.job_filters {
+    padding: $m-size;
+    margin-bottom: $m-size;
+
+    @include breakpoint($bp-desktop) {
+        margin-bottom: $l-size;
+    }
+}
+
+.job_types,
+.showing_jobs {
+    margin-top: $m-size !important;
+}
