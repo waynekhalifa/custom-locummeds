@@ -12,6 +12,8 @@
  * @package custom-locummeds
  */
 
+ /* Template Name: Job Listings*/
+
 get_header();
 ?>
 
@@ -31,8 +33,39 @@ get_header();
 						'post_type'			=> 'job_listing',
 						'posts_per_page'	=> 20,
 						'paged'				=> $paged
-					);
-					$query = new WP_Query( $args ); 
+                    );
+                    
+                    if (is_page('full-time')) {
+                        $args['tax_query'] = array(
+                            array(
+                                'taxonomy'  => 'job_listing_type',
+                                'field'     => 'slug',
+                                'terms'     => array('full-time')
+                            )
+                        );
+                    }
+
+                    if (is_page('part-time')) {
+                        $args['tax_query'] = array(
+                            array(
+                                'taxonomy'  => 'job_listing_type',
+                                'field'     => 'slug',
+                                'terms'     => array('part-time')
+                            )
+                        );
+                    }
+
+                    if (is_page('temporary')) {
+                        $args['tax_query'] = array(
+                            array(
+                                'taxonomy'  => 'job_listing_type',
+                                'field'     => 'slug',
+                                'terms'     => array('temporary')
+                            )
+                        );
+                    }
+
+					$query = new WP_Query( $args ); //print_r($query);
 
 					if ( $query->have_posts() ) :
 						echo '<ul class="job_listings">';
