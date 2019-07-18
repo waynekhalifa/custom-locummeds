@@ -105,6 +105,9 @@ select {
         padding: 0;
         @include container($main-width);
     }
+    @include breakpoint($l-devices) {
+        @include container($l-devices);
+    }
 }
 .section {
     margin-top: $l-size;
