@@ -1181,6 +1181,14 @@ select {
   color: white;
   border-radius: 2px; }
 
+.sitemap ul {
+  padding-left: 2.4rem; }
+  .sitemap ul li::before {
+    content: "\f068";
+    color: #B5E0FC;
+    font-family: FontAwesome;
+    margin-right: 1.6rem; }
+
 @media (min-width: 1260px) {
   .testimonials {
     background: url("./img/testimonials-bg.png") no-repeat center 0%; } }
