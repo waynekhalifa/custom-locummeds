@@ -326,15 +326,20 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
         margin-right: 0; } }
 
 /*============= Job Filters Layout =============*/
-@media (min-width: 1260px) {
-  .job_filters .job__search__input {
-    width: 48.5714285714%;
-    float: left;
-    margin-right: 2.8571428571%; }
-    .job_filters .job__search__input:last-of-type {
+.job_filters {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0; }
+  @media (min-width: 1260px) {
+    .job_filters .job__search__input {
       width: 48.5714285714%;
-      float: right;
-      margin-right: 0; } }
+      float: left;
+      margin-right: 2.8571428571%; }
+      .job_filters .job__search__input:last-of-type {
+        width: 48.5714285714%;
+        float: right;
+        margin-right: 0; } }
 
 * {
   -webkit-box-sizing: border-box;
@@ -502,11 +507,11 @@ select {
         display: block;
         clear: both; } }
 
-.section, #company-contacts, .location, .contact-form, .hero, .hero__roles, .about, .offers, .entry-header, .entry-content, .services, .testimonials {
+.section, #company-contacts, .location, .contact-form, .hero, .hero__roles, .about, .offers, .entry-header, .entry-content, .wp-pagenavi, .services, .testimonials {
   margin-top: 2.4rem;
   margin-bottom: 2.4rem; }
   @media (min-width: 1260px) {
-    .section, #company-contacts, .location, .contact-form, .hero, .hero__roles, .about, .offers, .entry-header, .entry-content, .services, .testimonials {
+    .section, #company-contacts, .location, .contact-form, .hero, .hero__roles, .about, .offers, .entry-header, .entry-content, .wp-pagenavi, .services, .testimonials {
       margin-top: 3.2rem;
       margin-bottom: 3.2rem; } }
 
@@ -1059,6 +1064,9 @@ select {
 
 .entry-content p {
   margin-bottom: 0.8rem; }
+
+.wp-pagenavi {
+  text-align: center; }
 
 .reveal-item {
   opacity: 0;
