@@ -106,7 +106,7 @@ select {
         @include container($main-width);
     }
     @include breakpoint($l-devices) {
-        @include container($l-devices);
+        @include container($large-width);
     }
 }
 .section {

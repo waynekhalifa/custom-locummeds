@@ -29,7 +29,7 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
   float: left;
   margin-left: 0;
   margin-right: 0; }
-  @media (min-width: 1024px) {
+  @media (min-width: 1200px) {
     .site-header .site-branding {
       width: 22.8571428571%;
       float: left;
@@ -60,7 +60,7 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
         width: 48.5714285714%;
         float: right;
         margin-right: 0; } }
-  @media (min-width: 1024px) {
+  @media (min-width: 1200px) {
     .footer-widgets .footer-widget {
       width: 22.8571428571%;
       float: left;
@@ -92,7 +92,7 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
         width: 40%;
         float: right;
         margin-right: 0; } }
-  @media (min-width: 1024px) {
+  @media (min-width: 1200px) {
     .site-info .info {
       width: 31.4285714286%;
       float: left;
@@ -142,7 +142,7 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
             width: 31.4285714286%;
             float: right;
             margin-right: 0; } }
-  @media (min-width: 1024px) {
+  @media (min-width: 1200px) {
     .hero .job__search {
       margin-left: 17.1428571429%;
       width: 65.7142857143%;
@@ -180,7 +180,7 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
   float: left;
   margin-left: 0;
   margin-right: 0; }
-  @media (min-width: 1024px) {
+  @media (min-width: 1200px) {
     .services .service {
       margin-left: 0%;
       width: 33.3333333333%;
@@ -223,7 +223,7 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
         width: 48.5714285714%;
         float: right;
         margin-right: 0; } }
-  @media (min-width: 1024px) {
+  @media (min-width: 1200px) {
     .company-contacts .company-contact {
       width: 31.4285714286%;
       float: left;
@@ -286,7 +286,7 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
         width: 48.5714285714%;
         float: right;
         margin-right: 0; } }
-  @media (min-width: 1024px) {
+  @media (min-width: 1200px) {
     .offers .offer {
       width: 31.4285714286%;
       float: left;
@@ -315,7 +315,7 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
         width: 48.5714285714%;
         float: right;
         margin-right: 0; } }
-  @media (min-width: 1024px) {
+  @media (min-width: 1200px) {
     .counter-widgets .counter-widget {
       width: 31.4285714286%;
       float: left;
@@ -331,7 +331,7 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
   float: left;
   margin-left: 0;
   margin-right: 0; }
-  @media (min-width: 1024px) {
+  @media (min-width: 1200px) {
     .job_filters .job__search__input {
       width: 48.5714285714%;
       float: left;
@@ -424,7 +424,7 @@ body {
   color: #3fa7da;
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.5; }
-  @media (min-width: 1024px) {
+  @media (min-width: 1200px) {
     body {
       font-size: 1.6rem; } }
 
@@ -439,19 +439,19 @@ h6 {
 
 h1 {
   font-size: 3.2rem; }
-  @media (min-width: 1024px) {
+  @media (min-width: 1200px) {
     h1 {
       font-size: 4.8rem; } }
 
 h2 {
   font-size: 2.4rem; }
-  @media (min-width: 1024px) {
+  @media (min-width: 1200px) {
     h2 {
       font-size: 3.2rem; } }
 
 h3 {
   font-size: 1.8rem; }
-  @media (min-width: 1024px) {
+  @media (min-width: 1200px) {
     h3 {
       font-size: 2.4rem; } }
 
@@ -508,19 +508,19 @@ select {
 
 .content-wrap, .header-wrap, .footer-wrap {
   padding: 0 1.6rem; }
-  @media (min-width: 1024px) {
+  @media (min-width: 1200px) {
     .content-wrap, .header-wrap, .footer-wrap {
       padding: 0;
-      max-width: 900px;
+      max-width: 1200px;
       margin-left: auto;
       margin-right: auto; }
       .content-wrap:after, .header-wrap:after, .footer-wrap:after {
         content: " ";
         display: block;
         clear: both; } }
-  @media (min-width: 1300px) {
+  @media (min-width: 1440px) {
     .content-wrap, .header-wrap, .footer-wrap {
-      max-width: 1300px;
+      max-width: 1360px;
       margin-left: auto;
       margin-right: auto; }
       .content-wrap:after, .header-wrap:after, .footer-wrap:after {
@@ -531,7 +531,7 @@ select {
 .section, #company-contacts, .location, .contact-form, .hero, .hero__roles, .about, .offers, .entry-header, .entry-content, .wp-pagenavi, .services, .testimonials {
   margin-top: 2.4rem;
   margin-bottom: 2.4rem; }
-  @media (min-width: 1024px) {
+  @media (min-width: 1200px) {
     .section, #company-contacts, .location, .contact-form, .hero, .hero__roles, .about, .offers, .entry-header, .entry-content, .wp-pagenavi, .services, .testimonials {
       margin-top: 3.2rem;
       margin-bottom: 3.2rem; } }
@@ -539,7 +539,7 @@ select {
 .section__title {
   margin-bottom: 1.6rem; }
 
-@media (min-width: 1024px) {
+@media (min-width: 1200px) {
   .about-us .entry-content {
     background: url("./img/360_bg.png") no-repeat 100% 100%;
     padding: 2.4rem 0; }
@@ -555,7 +555,7 @@ select {
   position: relative;
   left: 50%;
   transform: translateX(-50%); }
-  @media (min-width: 1024px) {
+  @media (min-width: 1200px) {
     #company-contacts h2 {
       margin-bottom: 4.8rem; } }
 
@@ -564,7 +564,7 @@ select {
   margin-bottom: 2.4rem; }
   .company-contact p {
     margin-bottom: 0.8rem; }
-  @media (min-width: 1024px) {
+  @media (min-width: 1200px) {
     .company-contact {
       margin-bottom: 3.2rem; } }
 
@@ -619,7 +619,7 @@ select {
       display: block;
       padding: 1.6rem;
       font-size: 4.8rem; }
-    @media (min-width: 1024px) {
+    @media (min-width: 1200px) {
       .counter-widget .counter {
         font-size: 7.2rem; } }
   .counter-widget:last-child .counter::before {
@@ -642,7 +642,7 @@ select {
     font-family: FontAwesome;
     margin-right: 1.6rem; }
 
-@media (min-width: 1024px) {
+@media (min-width: 1200px) {
   .clients .entry-content {
     background: url("./img/nurse.png") no-repeat 0% 100%;
     padding: 2.4rem 0; }
@@ -668,7 +668,7 @@ select {
       color: black;
       font-size: 2.4rem;
       margin-bottom: 1.6rem; }
-      @media (min-width: 1024px) {
+      @media (min-width: 1200px) {
         .nurses li:first-child,
         .gps li:first-child {
           font-size: 3.2rem; } }
@@ -677,11 +677,11 @@ select {
         content: "";
         margin-right: 0; }
 
-@media (min-width: 1024px) {
+@media (min-width: 1200px) {
   .nurses {
     background: url("./img/nurse_new_bg.png") no-repeat 100% 100%; } }
 
-@media (min-width: 1024px) {
+@media (min-width: 1200px) {
   .gps {
     background: url("./img/doctor_new_bg.png") no-repeat 0 100%;
     padding-left: 30%; } }
@@ -695,7 +695,7 @@ select {
   .contact-us .entry-content a:hover {
     color: #3fa7da; }
 
-@media (min-width: 1024px) {
+@media (min-width: 1200px) {
   .contact-us .entry-content p,
   .contact-us .entry-content ul {
     margin-bottom: 1.6rem; }
@@ -774,7 +774,7 @@ select {
   @media (min-width: 768px) {
     .menu__icon {
       top: 5.6rem; } }
-  @media (min-width: 1024px) {
+  @media (min-width: 1200px) {
     .menu__icon {
       display: none; } }
   .menu__icon--stuck {
@@ -792,7 +792,7 @@ select {
   text-align: center;
   padding: 3.2rem 0;
   line-height: 1; }
-  @media (min-width: 1024px) {
+  @media (min-width: 1200px) {
     .hero__title {
       max-width: 600px;
       margin-left: auto;
@@ -808,7 +808,7 @@ select {
   border-radius: 4px;
   margin-bottom: 1.6rem;
   padding: 1.6rem; }
-  @media (min-width: 1024px) {
+  @media (min-width: 1200px) {
     .job__search {
       margin-top: 4.8rem; } }
 
@@ -830,7 +830,7 @@ select {
   position: relative;
   left: 50%;
   transform: translateX(-50%); }
-  @media (min-width: 1024px) {
+  @media (min-width: 1200px) {
     .hero__actions {
       margin-bottom: 4.8rem; } }
 
@@ -883,7 +883,7 @@ select {
   transform: translate(-50%, -50%);
   width: 90%;
   z-index: 12; }
-  @media (min-width: 1024px) {
+  @media (min-width: 1200px) {
     .modal {
       max-width: 800px; } }
   .modal--is-visible {
@@ -901,7 +901,7 @@ select {
 .job_filters {
   padding: 1.6rem;
   margin-bottom: 1.6rem; }
-  @media (min-width: 1024px) {
+  @media (min-width: 1200px) {
     .job_filters {
       margin-bottom: 2.4rem; } }
 
@@ -971,7 +971,7 @@ select {
 .about p {
   margin-bottom: 0.8rem; }
 
-@media (min-width: 1024px) {
+@media (min-width: 1200px) {
   .about {
     background: url("./img/about-bg.png") no-repeat center 100%;
     padding: 2.4rem 0; }
@@ -1004,7 +1004,7 @@ select {
   transition: all 0.3s ease-out; }
   .main-navigation--is-visible {
     transform: translateX(0); }
-  @media (min-width: 1024px) {
+  @media (min-width: 1200px) {
     .main-navigation {
       position: relative;
       top: auto;
@@ -1014,14 +1014,14 @@ select {
       transform: translateX(0); } }
   .main-navigation .menu {
     padding: 1.6rem; }
-    @media (min-width: 1024px) {
+    @media (min-width: 1200px) {
       .main-navigation .menu {
         float: right;
         padding: 1.2rem 0; } }
   .main-navigation .menu-item {
     border-bottom: 1px dashed #3fa7da;
     padding: 0.8rem 0; }
-    @media (min-width: 1024px) {
+    @media (min-width: 1200px) {
       .main-navigation .menu-item {
         border-bottom: none;
         float: left;
@@ -1223,13 +1223,17 @@ select {
     font-family: FontAwesome;
     margin-right: 1.6rem; }
 
-@media (min-width: 1024px) {
+@media (min-width: 1200px) {
   .testimonials {
     background: url("./img/testimonials-bg.png") no-repeat center 0%; } }
 
-@media (min-width: 1024px) {
+@media (min-width: 1200px) {
   .testimonials .owl-carousel {
     padding-left: 30rem; } }
+
+@media (min-width: 1440px) {
+  .testimonials .owl-carousel {
+    padding-left: 40rem; } }
 
 .testimonials .owl-dot {
   background: #ecd8d8 !important;
@@ -1249,14 +1253,14 @@ select {
   text-transform: uppercase;
   line-height: .9;
   margin-bottom: 2.4rem; }
-  @media (min-width: 1024px) {
+  @media (min-width: 1200px) {
     .testimonial__title {
       font-size: 4.8rem;
       max-width: 800px; } }
 
 .testimonial__content {
   margin-bottom: 1.6rem; }
-  @media (min-width: 1024px) {
+  @media (min-width: 1200px) {
     .testimonial__content {
       max-width: 800px; } }
 

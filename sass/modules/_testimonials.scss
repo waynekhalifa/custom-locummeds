@@ -9,6 +9,9 @@
         @include breakpoint($bp-desktop){
             padding-left: 30rem;
         }
+        @include breakpoint($l-devices){
+            padding-left: 40rem;
+        }
     }
 
     .owl-dot {
