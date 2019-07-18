@@ -17,28 +17,23 @@ get_header();
 
 <div id="primary" class="content-area">
 	<main id="main" class="site-main contact-us">
-		
-        <?php while ( have_posts() ) : the_post(); ?>
-            <div class="content-wrap">
+		<div class="content-wrap">
+			<?php while ( have_posts() ) : the_post(); ?>
 				<header class="entry-header">
 					<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-                </header><!-- .entry-header -->
-            </div>
-
-            <div id="map-canvas" class="location">
-                <?php echo do_shortcode('[wpgmza id="1"]'); ?>
-            </div>
-
-            <div class="content-wrap">
-                <div class="contact-form">
-                    <?php echo do_shortcode('[contact-form-7 id="100" title="Contact form"]'); ?>
-                </div>
+				</header><!-- .entry-header -->
 
 				<div class="entry-content">
 					<?php the_content(); ?>
-                </div><!-- .entry-content -->
-            </div>
-        <?php endwhile; // End of the loop. ?>
+				</div><!-- .entry-content -->
+
+				<?php // If comments are open or we have at least one comment, load up the comment template.
+				if ( comments_open() || get_comments_number() ) :
+					comments_template();
+				endif;
+
+			endwhile; // End of the loop. ?>
+		</div>
 	</main><!-- #main -->
 </div><!-- #primary -->
 
