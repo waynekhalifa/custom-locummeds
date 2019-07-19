@@ -1,0 +1,107 @@
+.single-job {
+    li {
+        color: $gray;
+    }
+
+    strong {
+        color: $main-color;
+    }
+
+    h3 {
+        margin: $m-size 0;
+    }
+
+    .job-listing-meta {
+        li {
+            color: $gray;
+            margin: 0;
+            margin-bottom: $s-size;
+            padding: $s-size 0;
+
+            @include breakpoint($bp-tablet) {
+                margin-bottom: $m-size;
+            }
+
+            @include breakpoint(1024px) {
+                margin-bottom: 0;
+            }
+
+            a {
+                color: $gray;
+            }
+
+            &.job-type {
+                background: $green;
+                color: white;
+                padding-left: $l-size;
+            }
+
+            &.location {
+                &::before {
+                    font-family: FontAwesome;
+                    content: "\f041";
+                    color: $green;
+                    font-size: $l-size;
+                    line-height: 0;
+                    margin-right: $s-size;
+                }
+            }
+            
+            &.date-posted {
+                &::before {
+                    font-family: FontAwesome;
+                    content: "\f073";
+                    color: $green;
+                    font-size: 1.9rem;
+                    line-height: 0;
+                    margin-right: $s-size;
+                }
+            }
+
+            @include breakpoint($bp-tablet){
+                float: left;
+                padding: $s-size $l-size;
+            }
+        }
+    }
+
+    .company {
+        @extend .section;
+        box-shadow: 0px 0px 2px 1px rgba(black, .2);
+        padding: $s-size;
+
+        @include breakpoint($bp-tablet) {
+            padding: $s-size $m-size;
+        }
+
+        img {
+            display: block;
+            float: left;
+            height: auto;
+            margin-right: $m-size;
+            width: $xxl-size;
+
+            @include breakpoint($bp-tablet) {
+                margin-right: $l-size;
+            }
+        }
+
+        .name {
+            margin-top: $m-size;
+        }
+    }
+
+    .application_button {
+        background: $main-color;
+        border-radius: 2px;
+        border: 1px solid darken($main-color, 20%);
+        color: white;
+    }
+
+    .job_description {
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+}

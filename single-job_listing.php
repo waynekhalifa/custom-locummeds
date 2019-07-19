@@ -39,25 +39,51 @@ get_header();
                         <?php custom_locummeds_post_thumbnail(); ?>
 
                         <div class="entry-content">
-                            <?php
-                            the_content( sprintf(
-                                wp_kses(
-                                    /* translators: %s: Name of current post. Only visible to screen readers */
-                                    __( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'custom-locummeds' ),
-                                    array(
-                                        'span' => array(
-                                            'class' => array(),
-                                        ),
-                                    )
-                                ),
-                                get_the_title()
-                            ) );
+                            <div class="single_job">
+                                <ul class="job-listing-meta meta">
+                                    <?php do_action( 'single_job_listing_meta_start' ); ?>
 
-                            wp_link_pages( array(
-                                'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'custom-locummeds' ),
-                                'after'  => '</div>',
-                            ) );
-                            ?>
+                                    <?php if ( get_option( 'job_manager_enable_types' ) ) { ?>
+                                        <?php $types = wpjm_get_the_job_types(); ?>
+                                        <?php if ( ! empty( $types ) ) : foreach ( $types as $type ) : ?>
+
+                                            <li class="job-type <?php echo esc_attr( sanitize_title( $type->slug ) ); ?>"><?php echo esc_html( $type->name ); ?></li>
+
+                                        <?php endforeach; endif; ?>
+                                    <?php } ?>
+
+                                    <li class="location"><?php the_job_location(); ?></li>
+
+                                    <li class="date-posted"><?php the_job_publish_date(); ?></li>
+
+                                    <?php if ( is_position_filled() ) : ?>
+                                        <li class="position-filled"><?php _e( 'This position has been filled', 'wp-job-manager' ); ?></li>
+                                    <?php elseif ( ! candidates_can_apply() && 'preview' !== $post->post_status ) : ?>
+                                        <li class="listing-expired"><?php _e( 'Applications have closed', 'wp-job-manager' ); ?></li>
+                                    <?php endif; ?>
+
+                                    <?php do_action( 'single_job_listing_meta_end' ); ?>
+                                </ul>
+                                <?php if ( candidates_can_apply() ) : ?>
+                                    <?php get_job_manager_template( 'job-application.php' ); ?>
+                                <?php endif; ?>
+                                <div class="company">
+                                    <?php the_company_logo(); ?>
+
+                                    <p class="name">
+                                        <?php if ( $website = get_the_company_website() ) : ?>
+                                            <a class="website" href="<?php echo esc_url( $website ); ?>" rel="nofollow"><?php esc_html_e( 'Website', 'wp-job-manager' ); ?></a>
+                                        <?php endif; ?>
+                                        <?php the_company_twitter(); ?>
+                                        <?php the_company_name( '<strong>', '</strong>' ); ?>
+                                    </p>
+                                    <?php the_company_tagline( '<p class="tagline">', '</p>' ); ?>
+                                    <?php the_company_video(); ?>
+                                </div>
+                                <div class="job_description">
+                                    <?php wpjm_the_job_description(); ?>
+                                </div>
+                            </div>
                         </div><!-- .entry-content -->
 
                         

@@ -326,3 +326,23 @@ $no-gatters: (
 .wp-pagenavi {
 	@include span(12 of 12);
 }
+
+/*============= Single Job Listings Layout ================*/
+.single_job {
+	@include span(12 of 12);
+	.company {
+		@include span(12 of 12);
+	}
+	.job_description {
+		@include span(12 of 12);
+	}
+
+	@include breakpoint(1024px) {
+		.job-listing-meta {
+			@include span(9 of 12);
+		}
+		.job_application {
+			@include span(3 of 12 last);
+		}
+	}
+}

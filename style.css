@@ -328,6 +328,32 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
   margin-left: 0;
   margin-right: 0; }
 
+/*============= Single Job Listings Layout ================*/
+.single_job {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0; }
+  .single_job .company {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0; }
+  .single_job .job_description {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0; }
+  @media (min-width: 1024px) {
+    .single_job .job-listing-meta {
+      width: 74.2857142857%;
+      float: left;
+      margin-right: 2.8571428571%; }
+    .single_job .job_application {
+      width: 22.8571428571%;
+      float: right;
+      margin-right: 0; } }
+
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -503,11 +529,11 @@ select {
         display: block;
         clear: both; } }
 
-.section, #company-contacts, .location, .contact-form, .hero, .hero__roles, .about, .offers, .entry-header, .entry-content, .wp-pagenavi, .services, .testimonials {
+.section, #company-contacts, .location, .contact-form, .hero, .hero__roles, .about, .offers, .entry-header, .entry-content, .wp-pagenavi, .services, .single-job .company, .testimonials {
   margin-top: 2.4rem;
   margin-bottom: 2.4rem; }
   @media (min-width: 1200px) {
-    .section, #company-contacts, .location, .contact-form, .hero, .hero__roles, .about, .offers, .entry-header, .entry-content, .wp-pagenavi, .services, .testimonials {
+    .section, #company-contacts, .location, .contact-form, .hero, .hero__roles, .about, .offers, .entry-header, .entry-content, .wp-pagenavi, .services, .single-job .company, .testimonials {
       margin-top: 3.2rem;
       margin-bottom: 3.2rem; } }
 
@@ -878,11 +904,13 @@ select {
 
 .request-modal,
 .refer-modal,
-.send-cv-modal {
+.send-cv-modal,
+.application_details {
   display: none; }
   .request-modal.expanded,
   .refer-modal.expanded,
-  .send-cv-modal.expanded {
+  .send-cv-modal.expanded,
+  .application_details.expanded {
     display: block; }
 
 .job_filters {
@@ -1201,6 +1229,79 @@ select {
   background: #3fa7da;
   color: white;
   border-radius: 2px; }
+
+.single-job li {
+  color: #898989; }
+
+.single-job strong {
+  color: #3fa7da; }
+
+.single-job h3 {
+  margin: 1.6rem 0; }
+
+.single-job .job-listing-meta li {
+  color: #898989;
+  margin: 0;
+  margin-bottom: 0.8rem;
+  padding: 0.8rem 0; }
+  @media (min-width: 768px) {
+    .single-job .job-listing-meta li {
+      margin-bottom: 1.6rem; } }
+  @media (min-width: 1024px) {
+    .single-job .job-listing-meta li {
+      margin-bottom: 0; } }
+  .single-job .job-listing-meta li a {
+    color: #898989; }
+  .single-job .job-listing-meta li.job-type {
+    background: #70BF44;
+    color: white;
+    padding-left: 2.4rem; }
+  .single-job .job-listing-meta li.location::before {
+    font-family: FontAwesome;
+    content: "\f041";
+    color: #70BF44;
+    font-size: 2.4rem;
+    line-height: 0;
+    margin-right: 0.8rem; }
+  .single-job .job-listing-meta li.date-posted::before {
+    font-family: FontAwesome;
+    content: "\f073";
+    color: #70BF44;
+    font-size: 1.9rem;
+    line-height: 0;
+    margin-right: 0.8rem; }
+  @media (min-width: 768px) {
+    .single-job .job-listing-meta li {
+      float: left;
+      padding: 0.8rem 2.4rem; } }
+
+.single-job .company {
+  box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.2);
+  padding: 0.8rem; }
+  @media (min-width: 768px) {
+    .single-job .company {
+      padding: 0.8rem 1.6rem; } }
+  .single-job .company img {
+    display: block;
+    float: left;
+    height: auto;
+    margin-right: 1.6rem;
+    width: 4.8rem; }
+    @media (min-width: 768px) {
+      .single-job .company img {
+        margin-right: 2.4rem; } }
+  .single-job .company .name {
+    margin-top: 1.6rem; }
+
+.single-job .application_button {
+  background: #3fa7da;
+  border-radius: 2px;
+  border: 1px solid #1d6e96;
+  color: white; }
+
+.single-job .job_description img {
+  max-width: 100%;
+  height: auto; }
 
 .sitemap ul {
   padding-left: 2.4rem; }

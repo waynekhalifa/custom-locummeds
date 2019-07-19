@@ -16,6 +16,7 @@ $(document).ready(function(){
     new Modal( $('.request-modal'), $('.request-callback'), $('.backdrop') );
     new Modal( $('.refer-modal'), $('.refer-friend'), $('.backdrop') );
     new Modal( $('.send-cv-modal'), $('.send-cv'), $('.backdrop') );
+    new Modal( $('.application_details'), $('.application_button'), $('.backdrop') );
 
     // Counter Up
     new Counter();
