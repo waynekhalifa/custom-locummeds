@@ -103,5 +103,15 @@
             max-width: 100%;
             height: auto;
         }
+
+        li {
+            &::before {
+                font-family: FontAwesome;
+                content: "\f111";
+                color: $main-color;
+                font-size: $s-size;
+                margin-right: $s-size;
+            }
+        }
     }
 }

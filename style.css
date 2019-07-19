@@ -1303,6 +1303,13 @@ select {
   max-width: 100%;
   height: auto; }
 
+.single-job .job_description li::before {
+  font-family: FontAwesome;
+  content: "\f111";
+  color: #3fa7da;
+  font-size: 0.8rem;
+  margin-right: 0.8rem; }
+
 .sitemap ul {
   padding-left: 2.4rem; }
   .sitemap ul li::before {
