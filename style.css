@@ -344,6 +344,11 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
     float: left;
     margin-left: 0;
     margin-right: 0; }
+  .single_job .more-info {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0; }
   @media (min-width: 1024px) {
     .single_job .job-listing-meta {
       width: 74.2857142857%;
@@ -1309,6 +1314,15 @@ select {
   color: #3fa7da;
   font-size: 0.8rem;
   margin-right: 0.8rem; }
+
+.single-job .more-info {
+  margin-top: 1.6rem; }
+  .single-job .more-info a {
+    background: #70BF44;
+    border: 1px solid #599b35;
+    border-radius: 2px;
+    color: white;
+    padding: 0.8rem 2.4rem; }
 
 .sitemap ul {
   padding-left: 2.4rem; }

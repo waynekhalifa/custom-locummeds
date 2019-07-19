@@ -83,6 +83,7 @@ get_header();
                                 <div class="job_description">
                                     <?php wpjm_the_job_description(); ?>
                                 </div>
+                                <div class="more-info"><a href="tel:01923594002"><?php _e('Call For More Information', 'custom-locummeds'); ?></a></div>
                             </div>
                         </div><!-- .entry-content -->
 

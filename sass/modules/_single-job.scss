@@ -114,4 +114,15 @@
             }
         }
     }
+
+    .more-info {
+        margin-top: $m-size;
+        a {
+            background: $green;
+            border: 1px solid darken($green, 10%);
+            border-radius: 2px;
+            color: white;
+            padding: $s-size $l-size;
+        }
+    }
 }
