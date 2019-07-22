@@ -339,6 +339,9 @@ $no-gatters: (
 	.more-info {
 		@include span(12 of 12);
 	}
+	.social-sharings {
+		@include span(12 of 12);
+	}
 
 	@include breakpoint(1024px) {
 		.job-listing-meta {

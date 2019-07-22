@@ -64,9 +64,11 @@ get_header();
 
                                     <?php do_action( 'single_job_listing_meta_end' ); ?>
                                 </ul>
+
                                 <?php if ( candidates_can_apply() ) : ?>
                                     <?php get_job_manager_template( 'job-application.php' ); ?>
                                 <?php endif; ?>
+
                                 <div class="company">
                                     <?php the_company_logo(); ?>
 
@@ -80,10 +82,18 @@ get_header();
                                     <?php the_company_tagline( '<p class="tagline">', '</p>' ); ?>
                                     <?php the_company_video(); ?>
                                 </div>
+
                                 <div class="job_description">
                                     <?php wpjm_the_job_description(); ?>
                                 </div>
+
                                 <div class="more-info"><a href="tel:01923594002"><?php _e('Call For More Information', 'custom-locummeds'); ?></a></div>
+
+                                <ul class="social-sharings">
+                                    <li><a href="#" target="_blank" rel="nofollow" class="facebook"><?php _e('Share', 'custom-locummeds'); ?></a></li>
+                                    <li><a href="#" target="_blank" rel="nofollow" class="twitter"><?php _e('Tweet', 'custom-locummeds'); ?></a></li>
+                                    <li><a href="#" target="_blank" rel="nofollow" class="google"><?php _e('Google', 'custom-locummeds'); ?></a></li>
+                                </ul>
                             </div>
                         </div><!-- .entry-content -->
 

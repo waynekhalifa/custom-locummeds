@@ -125,4 +125,63 @@
             padding: $s-size $l-size;
         }
     }
+
+    .social-sharings {
+        @extend .section;
+        border-top: 1px solid $light-gray;
+        text-align: center;
+        padding-top: $l-size;
+
+        li {
+            display: inline-block;
+            margin: $m-size $s-size 0 $s-size;
+
+            a {
+                border-radius: 2px;
+                box-shadow: 0px 0px 2px 1px rgba(black, .2);
+                display: block;
+                padding: .4rem $s-size;
+
+                &:hover {
+                    color: white;
+                }
+
+                &.facebook {
+                    &:hover {
+                        background: $facebook;
+                    }
+
+                    &::before {
+                        font-family: FontAwesome;
+                        content: "\f09a";
+                        margin-right: $s-size;
+                    }
+                }
+
+                &.twitter {
+                    &:hover {
+                        background: $twitter;
+                    }
+                    
+                    &::before {
+                        font-family: FontAwesome;
+                        content: "\f099";
+                        margin-right: $s-size;
+                    }
+                }
+
+                &.google {
+                    &:hover {
+                        background: $google;
+                    }
+                    
+                    &::before {
+                        font-family: FontAwesome;
+                        content: "\f0d5";
+                        margin-right: $s-size;
+                    }
+                }
+            }
+        }
+    }
 }
