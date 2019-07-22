@@ -29,7 +29,7 @@
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KQR2M2N" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
-	<div class="topbar">
+	<div id="topbar" class="topbar">
 		<div class="content-wrap">
 			<div class="contact">
 				<div class="hotline"><?php dynamic_sidebar('hotline'); ?></div>

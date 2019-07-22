@@ -97,6 +97,10 @@ $no-gatters: (
 		.info {
 			@include span(4 of 12);
 
+			&:nth-child(2) {
+				@include span(4 of 12);
+			}
+
 			&:last-child {
 				@include span(4 of 12 last);
 			}

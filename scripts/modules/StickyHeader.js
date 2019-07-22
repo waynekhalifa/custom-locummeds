@@ -1,12 +1,15 @@
 import waypoints from '../../node_modules/waypoints/lib/noframework.waypoints'
+import smoothScroll from 'jquery-smooth-scroll';
 
 class StickyHeader {
     constructor() {
         this.siteHeader = $('.site-header');
         this.headerTrigger = $('.site-header');
         this.menuIcon = $('.menu__icon');
+        this.scrollUp = $('.scroll-up');
         this.wrapHeader();
         this.createHeaderWaypoint();
+        this.addSmoothScrolling();
     }
 
     wrapHeader() {
@@ -29,6 +32,10 @@ class StickyHeader {
                 }
             }
         });
+    }
+
+    addSmoothScrolling() {
+        this.scrollUp.smoothScroll();
     }
 }
 

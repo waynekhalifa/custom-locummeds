@@ -48,7 +48,7 @@
 						<?php _e('All rights reserved.', 'custom-locummeds'); ?>
 					</p>
 				</div>
-				<div class="info">-</div>
+				<div class="info"><a href="#topbar" class="scroll-up"><i class="fa fa-long-arrow-up" aria-hidden="true"></i></a></div>
 				<div class="info hotline"><?php dynamic_sidebar('hotline'); ?></div>
 			</div>
 		</div><!-- .site-info -->
